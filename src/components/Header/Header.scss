@@ -1,0 +1,28 @@
+.todo__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.header-title {
+}
+
+.header-btn {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.header-btn svg {
+  font-size: 30px;
+}
+
+.hedaer-btn__dark {
+  fill: black;
+}
+
+.hedaer-btn__light {
+  fill: rgb(199, 199, 10);
+}
