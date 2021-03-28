@@ -12,13 +12,13 @@ const Header = () => {
   const theme = useSelector((state) => state.theme);
 
   return (
-    <header className="todo__header">
+    <header className={theme ? 'todo__header' : 'todo__header todo__header-dark'}>
       <h2 className={theme ? 'header-title' : 'header-title header-title__dark'}>Task App</h2>
       <button className="header-btn" onClick={() => dispatch(changeTheme())}>
         {theme ? (
-          <BsMoon className="hedaer-btn__dark" />
+          <MdWbSunny className="hedaer-btn__dark" />
         ) : (
-          <MdWbSunny className="hedaer-btn__light" />
+          <BsMoon className="hedaer-btn__light" />
         )}
       </button>
     </header>

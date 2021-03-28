@@ -1,7 +1,7 @@
 .todo__task {
   display: flex;
   align-items: center;
-  margin-bottom: 15px;
+  margin-bottom: 5px;
   padding: 10px;
 }
 
@@ -10,11 +10,17 @@
   font-size: 20px;
 }
 
-.todo__task-name span {
-}
-
 .task-name__checked {
   color: rgb(170, 169, 169);
+  text-decoration: line-through;
+}
+
+.task-name__light {
+  color: #fff;
+}
+
+.task-name__light-checked {
+  color: #7d838f;
   text-decoration: line-through;
 }
 
@@ -22,6 +28,11 @@
   padding: 5px;
   border: none;
   cursor: pointer;
+  transition: background-color 0.2s linear;
+}
+
+.todo__task-btn:focus {
+  outline: 2px solid black;
 }
 
 .todo__task-btn svg {
@@ -33,11 +44,14 @@
   margin-right: 10px;
   background-color: #74c080;
 }
-.btn-check svg {
+.btn-check:hover {
+  background-color: #68aa72;
 }
 
 .btn-delete {
   background-color: #ee7f73;
 }
-.btn-delete svg {
+
+.btn-delete:hover {
+  background-color: #d16f64;
 }

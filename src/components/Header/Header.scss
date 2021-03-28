@@ -7,13 +7,17 @@
   border-bottom: 1px solid #8f94a1;
 }
 
+.todo__header-dark {
+  border-bottom: 1px solid #303236;
+}
+
 .header-title {
   font-size: 35px;
   color: #1f1f1f;
 }
 
 .header-title__dark {
-  color: #83859e;
+  color: #fff;
 }
 
 .header-btn {
@@ -31,5 +35,5 @@
 }
 
 .hedaer-btn__light {
-  fill: #83859e;
+  fill: #fff;
 }

@@ -18,6 +18,17 @@
   font-size: 17px;
 }
 
+.form__input-dark {
+  background-color: #303236;
+  color: #7e7f82;
+  border: none;
+  outline: none;
+}
+
+.form__input-dark:focus {
+  outline: 2px solid black;
+}
+
 .form__btn {
   border: none;
   font-size: 17px;
@@ -25,6 +36,20 @@
   color: #dfdbf7;
   background-color: #7e6ee1;
   cursor: pointer;
+  transition: background-color 0.2s linear;
+}
+
+.form__btn:focus {
+  outline: 2px solid black;
+}
+
+.form__btn-dark {
+  color: #fff;
+  background-color: #2ea3d1;
+}
+
+.form__btn:hover {
+  background-color: #2b8eb4;
 }
 
 .form__right {
@@ -35,4 +60,16 @@
   color: #8f94a1;
   font-size: 17px;
   padding: 5px;
+  cursor: pointer;
+}
+
+.form__select-dark {
+  background-color: #303236;
+  color: #7e7f82;
+  border: none;
+  outline: none;
+}
+
+.form__select-dark:focus {
+  outline: 2px solid black;
 }
