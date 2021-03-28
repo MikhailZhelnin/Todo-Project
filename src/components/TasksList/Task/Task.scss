@@ -1,0 +1,43 @@
+.todo__task {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  padding: 10px;
+}
+
+.todo__task-name {
+  flex-grow: 1;
+  font-size: 20px;
+}
+
+.todo__task-name span {
+}
+
+.task-name__checked {
+  color: rgb(170, 169, 169);
+  text-decoration: line-through;
+}
+
+.todo__task-btn {
+  padding: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+.todo__task-btn svg {
+  font-size: 25px;
+  fill: #fff;
+}
+
+.btn-check {
+  margin-right: 10px;
+  background-color: #74c080;
+}
+.btn-check svg {
+}
+
+.btn-delete {
+  background-color: #ee7f73;
+}
+.btn-delete svg {
+}

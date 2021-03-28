@@ -2,11 +2,18 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 10px;
   padding: 10px;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid #8f94a1;
 }
 
 .header-title {
+  font-size: 35px;
+  color: #1f1f1f;
+}
+
+.header-title__dark {
+  color: #83859e;
 }
 
 .header-btn {
@@ -16,13 +23,13 @@
 }
 
 .header-btn svg {
-  font-size: 30px;
+  font-size: 35px;
 }
 
 .hedaer-btn__dark {
-  fill: black;
+  fill: #1f1f1f;
 }
 
 .hedaer-btn__light {
-  fill: rgb(199, 199, 10);
+  fill: #83859e;
 }
