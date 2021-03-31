@@ -26,3 +26,10 @@ export const changeTheme = () => {
     type: actionTypes.CHANGE_THEME,
   };
 };
+
+export const filterTodo = (filter) => {
+  return {
+    type: actionTypes.FILTER_TODO,
+    payload: filter,
+  };
+};

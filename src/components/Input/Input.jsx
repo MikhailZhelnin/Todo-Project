@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 
-import { addTask } from '../../redux/actions/action';
+import { addTask, filterTodo } from '../../redux/actions/action';
 
 import './Input.scss';
 
@@ -13,6 +13,9 @@ const Input = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    if (name === '') {
+      return false;
+    }
     const newTask = {
       id: new Date().getTime().toString(),
       name,
@@ -20,6 +23,10 @@ const Input = () => {
     };
     dispatch(addTask(newTask));
     setName('');
+  };
+
+  const handleChange = (e) => {
+    dispatch(filterTodo(e.target.value));
   };
 
   return (
@@ -33,13 +40,16 @@ const Input = () => {
             type="text"
             placeholder="Enter your task..."
           />
-          <button type="submit" className={theme ? 'form__btn' : 'form__btn form__btn-dark'}>
+          <button type="submit" className="form__btn">
             Add
           </button>
         </div>
 
         <div className="form__right">
-          <select name="todo" className={theme ? 'form__select' : 'form__select form__select-dark'}>
+          <select
+            name="todo"
+            className={theme ? 'form__select' : 'form__select form__select-dark'}
+            onChange={handleChange}>
             <option value="all">All</option>
             <option value="completed">Completed</option>
             <option value="uncompleted">Uncompleted</option>

@@ -6,11 +6,11 @@ import Task from './Task/Task';
 import './TasksList.scss';
 
 const TasksList = () => {
-  const tasks = useSelector((state) => state.tasks);
+  const filteredTasks = useSelector((state) => state.filteredTasks);
 
   return (
     <div className="todo__tasks">
-      {tasks.map((task) => (
+      {filteredTasks.map((task) => (
         <Task key={task.id} {...task} />
       ))}
     </div>

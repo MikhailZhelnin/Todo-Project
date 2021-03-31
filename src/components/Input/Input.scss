@@ -10,6 +10,7 @@
 }
 
 .form__input {
+  width: 300px;
   height: 100%;
   padding: 15px;
   margin-right: 10px;
@@ -32,27 +33,19 @@
 .form__btn {
   border: none;
   font-size: 17px;
-  padding: 15px;
-  color: #dfdbf7;
-  background-color: #7e6ee1;
-  cursor: pointer;
-  transition: background-color 0.2s linear;
-}
-
-.form__btn:focus {
-  outline: 2px solid black;
-}
-
-.form__btn-dark {
+  padding: 15px 25px;
   color: #fff;
   background-color: #2ea3d1;
+  cursor: pointer;
+  transition: background-color 0.2s linear;
 }
 
 .form__btn:hover {
   background-color: #2b8eb4;
 }
 
-.form__right {
+.form__btn:focus {
+  outline: 2px solid black;
 }
 
 .form__select {
@@ -61,6 +54,10 @@
   font-size: 17px;
   padding: 5px;
   cursor: pointer;
+}
+
+.form__select option:hover {
+  background: #7e6ee1;
 }
 
 .form__select-dark {
