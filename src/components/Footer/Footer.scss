@@ -1,0 +1,43 @@
+.todo__footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 10px;
+  border-top: 1px solid #8f94a1;
+}
+
+.todo__footer-dark {
+  border-top: 1px solid #303236;
+}
+
+.todo__footer-count {
+  font-size: 20px;
+}
+
+.todo__footer-count__cark {
+  color: #fff;
+}
+
+.todo__footer-buttons {
+}
+
+.footer-buttons__btn {
+  margin-right: 10px;
+  padding: 10px 15px;
+  font-size: 17px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.footer-buttons__btn:last-child {
+  margin-right: 0;
+}
+
+.footer-buttons__btn-active {
+  background-color: #8f92c0;
+}
+
+.btn-text__dark {
+  color: #fff;
+}

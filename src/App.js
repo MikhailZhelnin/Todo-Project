@@ -9,7 +9,7 @@ import Footer from './components/Footer/Footer';
 import './App.scss';
 
 function App() {
-  const theme = useSelector((state) => state.theme);
+  const theme = useSelector((state) => state.theme.theme);
 
   return (
     <div className={theme ? 'wrapper' : 'wrapper wrapper__dark'}>

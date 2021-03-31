@@ -10,7 +10,7 @@ import './Task.scss';
 
 const Task = ({ id, name, isCompleted }) => {
   const dispatch = useDispatch();
-  const theme = useSelector((state) => state.theme);
+  const theme = useSelector((state) => state.theme.theme);
 
   return (
     <div className="todo__task">

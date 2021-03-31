@@ -9,7 +9,7 @@ import './Header.scss';
 
 const Header = () => {
   const dispatch = useDispatch();
-  const theme = useSelector((state) => state.theme);
+  const theme = useSelector((state) => state.theme.theme);
 
   return (
     <header className={theme ? 'todo__header' : 'todo__header todo__header-dark'}>

@@ -29,7 +29,7 @@ export const changeTheme = () => {
 
 export const filterTodo = (filter) => {
   return {
-    type: actionTypes.FILTER_TODO,
+    type: actionTypes.FILTER_TASK,
     payload: filter,
   };
 };
