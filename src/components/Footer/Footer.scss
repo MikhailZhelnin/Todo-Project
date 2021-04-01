@@ -34,6 +34,10 @@
   margin-right: 0;
 }
 
+.footer-buttons__btn:focus {
+  outline: 2px solid black;
+}
+
 .footer-buttons__btn-active {
   background-color: #8f92c0;
 }

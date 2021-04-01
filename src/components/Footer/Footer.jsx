@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 
 import { filterTodo } from '../../redux/actions/action';
@@ -25,12 +25,22 @@ const Footer = () => {
   const theme = useSelector((state) => state.theme.theme);
   const tasks = useSelector((state) => state.tasks.tasks);
   const dispatch = useDispatch();
-  const count = tasks.length;
+  const tasksLength = tasks.length;
+
+  const [taskCounter, setTaskCounter] = useState(tasksLength);
+
+  const getActiveTasksCounter = (tasks) => {
+    return tasks.filter((task) => !task.isCompleted).length;
+  };
+
+  useEffect(() => {
+    setTaskCounter(getActiveTasksCounter(tasks));
+  }, [tasks]);
 
   return (
     <div className={theme ? 'todo__footer' : 'todo__footer todo__footer-dark'}>
       <div className={theme ? 'todo__footer-count' : 'todo__footer-count todo__footer-count__cark'}>
-        {count} Task Left
+        {taskCounter} Task Left
       </div>
 
       <div className="todo__footer-buttons">
