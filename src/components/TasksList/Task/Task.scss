@@ -3,6 +3,15 @@
   align-items: center;
   margin-bottom: 5px;
   padding: 10px;
+  border-bottom: 1px solid #8f94a1;
+}
+
+.todo__task:last-child {
+  border-bottom: none;
+}
+
+.todo__task-dark {
+  border-bottom: 1px solid #303236;
 }
 
 .todo__task-name {
@@ -54,4 +63,21 @@
 
 .btn-delete:hover {
   background-color: #d16f64;
+}
+
+@media (max-width: 500px) {
+  .todo__task {
+    flex-direction: column;
+  }
+
+  .todo__task-name {
+    align-self: flex-start;
+    margin-bottom: 10px;
+  }
+
+  .todo__task-buttons {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+  }
 }

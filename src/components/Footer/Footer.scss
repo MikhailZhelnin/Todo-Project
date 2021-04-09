@@ -45,3 +45,13 @@
 .btn-text__dark {
   color: #fff;
 }
+
+@media (max-width: 500px) {
+  .todo__footer {
+    flex-direction: column;
+  }
+
+  .todo__footer-count {
+    margin-bottom: 15px;
+  }
+}

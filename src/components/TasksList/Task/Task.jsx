@@ -13,7 +13,7 @@ const Task = ({ id, name, isCompleted }) => {
   const theme = useSelector((state) => state.theme.theme);
 
   return (
-    <div className="todo__task">
+    <div className={theme ? 'todo__task' : 'todo__task todo__task-dark'}>
       <div className="todo__task-name">
         {theme ? (
           <span className={isCompleted ? 'task-name__checked' : ''}>{name}</span>
@@ -23,12 +23,16 @@ const Task = ({ id, name, isCompleted }) => {
           </div>
         )}
       </div>
-      <button className="todo__task-btn btn-check" onClick={() => dispatch(changeIsCompleted(id))}>
-        <AiOutlineCheck />
-      </button>
-      <button className="todo__task-btn btn-delete" onClick={() => dispatch(deleteTask(id))}>
-        <RiDeleteBin7Line />
-      </button>
+      <div className="todo__task-buttons">
+        <button
+          className="todo__task-btn btn-check"
+          onClick={() => dispatch(changeIsCompleted(id))}>
+          <AiOutlineCheck />
+        </button>
+        <button className="todo__task-btn btn-delete" onClick={() => dispatch(deleteTask(id))}>
+          <RiDeleteBin7Line />
+        </button>
+      </div>
     </div>
   );
 };

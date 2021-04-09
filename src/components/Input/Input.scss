@@ -66,3 +66,18 @@
 .form__select-dark:focus {
   outline: 2px solid black;
 }
+
+@media (max-width: 350px) {
+  .form {
+    flex-direction: column;
+  }
+
+  .form__input {
+    width: 100%;
+    margin: 0 0 10px 0;
+  }
+
+  .form__btn {
+    width: 100%;
+  }
+}
