@@ -2,6 +2,6 @@
 
 npm i / npm start
 
-# View result
+# DEMO
 
-https://xenodochial-varahamihira-960778.netlify.app/
+https://my-tasks-manager.netlify.app/
