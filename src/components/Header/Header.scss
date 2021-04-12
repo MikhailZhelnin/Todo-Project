@@ -37,3 +37,21 @@
 .hedaer-btn__light {
   fill: #fff;
 }
+
+@media (max-width: 768px) {
+  .header-title {
+    font-size: 30px;
+  }
+  .header-btn svg {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 500px) {
+  .header-title {
+    font-size: 27px;
+  }
+  .header-btn svg {
+    font-size: 27px;
+  }
+}

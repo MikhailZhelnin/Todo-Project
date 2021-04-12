@@ -12,15 +12,11 @@ function App() {
   const theme = useSelector((state) => state.theme.theme);
 
   return (
-    <div className={theme ? 'wrapper' : 'wrapper wrapper__dark'}>
-      <div className="todo__wrapper">
-        <div className={theme ? 'todo' : 'todo todo__dark'}>
-          <Header />
-          <Input />
-          <TasksList />
-          <Footer />
-        </div>
-      </div>
+    <div className={theme ? 'todo' : 'todo todo__dark'}>
+      <Header />
+      <Input />
+      <TasksList />
+      <Footer />
     </div>
   );
 }
